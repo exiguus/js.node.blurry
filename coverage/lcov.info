@@ -1,5 +1,5 @@
 TN:
-SF:/Users/simongattner/Documents/projects/js.node.image.preview/lib/Blurry.spec.js
+SF:/Users/simongattner/Documents/projects/js.node.blurry/lib/Blurry.spec.js
 FN:4,(anonymous_1)
 FN:5,(anonymous_2)
 FN:14,(anonymous_3)
@@ -49,7 +49,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/simongattner/Documents/projects/js.node.image.preview/index.js
+SF:/Users/simongattner/Documents/projects/js.node.blurry/index.js
 FNF:0
 FNH:0
 DA:7,1
@@ -59,7 +59,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/simongattner/Documents/projects/js.node.image.preview/lib/index.js
+SF:/Users/simongattner/Documents/projects/js.node.blurry/lib/index.js
 FNF:0
 FNH:0
 DA:7,1
@@ -69,7 +69,7 @@ BRF:0
 BRH:0
 end_of_record
 TN:
-SF:/Users/simongattner/Documents/projects/js.node.image.preview/lib/Blurry.js
+SF:/Users/simongattner/Documents/projects/js.node.blurry/lib/Blurry.js
 FN:21,(anonymous_1)
 FN:38,(anonymous_2)
 FN:52,(anonymous_3)
