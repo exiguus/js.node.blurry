@@ -57,11 +57,11 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 [tests-url]: https://travis-ci.org/exiguus/js.node.blurry
 
 [coverage]:
-https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/test_coverage
+https://api.codeclimate.com/v1/badges/5c8585a4dbc7bfab06ac/test_coverage
 [coverage-url]: https://codeclimate.com/github/exiguus/js.node.blurry/test_coverage
 
 [maintainability]:
-https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/maintainability
+https://api.codeclimate.com/v1/badges/5c8585a4dbc7bfab06ac/maintainability
 [maintainability-url]: https://codeclimate.com/github/exiguus/js.node.blurry/maintainability
 
 [npm]: https://img.shields.io/npm/v/js.node.blurry.svg
