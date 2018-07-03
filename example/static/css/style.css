@@ -1,0 +1,318 @@
+/**
+ * blurry example
+ *  Simon Gattner 2018
+ *
+**/
+
+@keyframes fadeInBody {
+  0% {
+    background-color: #FFFFFF;
+    opacity: 0;
+  }
+  100% {
+    background-color: #4A82B3;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBoxShadow {
+  0% {
+    box-shadow: none;
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(5px, 5px) scale(1.01);
+    box-shadow: 15px 50px 100px -15px rgba(0, 0, 0, .6);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+    box-shadow: 15px 50px 100px -15px rgba(0, 0, 0, .2);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html.wf-active h1, html.wf-active h2, html.wf-active p, html.wf-active ul, html.wf-active figcaption, html.wf-active code {
+  opacity: 1;
+}
+html.wf-active pre {
+  overflow-x: auto;
+}
+
+body {
+  font-family: Roboto, Futura, "Century Gothic", AppleGothic, sans-serif;
+  font-size: 100%;
+  font-weight: normal;
+  line-height: 1.4;
+  max-width: 100vw;
+  color: rgba(255, 255, 255, 0.6);
+  background: #527fa7;
+  background: linear-gradient(90deg, #527fa7 0%,#3e75a5 100%);
+  opacity: 1;
+  animation: fadeInBody 1s ease-in;
+}
+
+main {
+  display: block;
+  width: 90vw;
+  max-width: 1140px;
+  margin: 8rem auto 2rem auto;
+}
+
+main ::-webkit-scrollbar {
+  width: 1em;
+}
+
+main ::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,.042);
+}
+
+main ::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,.042);
+  outline: 1px solid rgba(0,0,0,.9);
+}
+
+header {
+  display: block;
+  margin-bottom: 4rem;
+}
+
+header h1 {
+  padding: .023em;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 8em;
+  letter-spacing: 0.6em;
+  line-height: 1;
+  text-transform: uppercase;
+  text-shadow: 0px 1px 2px rgba(255, 255, 255, 0.1);
+  color: transparent;
+  background-color: rgba(18, 65, 107, 0.4);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+header h1::before {
+  content: "#";
+}
+
+header p {
+  margin-bottom: 0;
+  margin-left: 1.6em;
+  margin-right: 1.6em;
+}
+
+article {
+  width: 100%;
+}
+
+footer {
+  padding: 0 1.6em;
+  margin-bottom: 1rem;
+}
+
+footer::after {
+  content: " ";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+
+footer p {
+  display: block;
+  float: right;
+  max-width: 33.333%
+}
+
+footer p a {
+  margin-right: .4em;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.8em;
+  letter-spacing: 0.2em;
+  vertical-align: -.1em;
+  text-decoration: none;
+}
+
+footer ul {
+  display: block;
+  float: left;
+  margin-left: -.5em;
+  max-width: 66.666%;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+footer ul li+li {
+  margin-left: .4em;
+}
+
+footer ul li a {
+  display: block;
+  padding: .2em .4em;
+}
+
+figure {
+  margin-bottom: 6rem;
+}
+
+figcaption {
+  display: block;
+  margin-left: 1.6em;
+  margin-right: 1.6em;
+}
+
+figcaption a, p a {
+  text-decoration: underline;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus, {
+  color: inherit;
+  text-decoration: underline;
+}
+
+h1, h2, p, ul, figcaption, code {
+  opacity: 0;
+}
+
+h1, h2 {
+  font-weight: normal;
+}
+
+h2 {
+  margin-bottom: .5em;
+  padding-left: 1em;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+h2::before {
+  content: "#";
+  padding-right: .4em;
+  margin-left: -.8em;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 1.4em;
+  vertical-align: sub;
+  opacity: 0.6;
+}
+
+h1, p, picture, figure>img, figcaption, pre {
+  margin-bottom: 2rem;
+}
+
+pre {
+  padding: 2em;
+  max-width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, .042);
+  box-shadow: 15px 50px 100px -15px rgba(0, 0, 0, .2);
+  animation: fadeInBoxShadow 1s linear;
+  transition: all 1s ease-out;
+}
+
+pre:hover {
+  transform: scale(1.02);
+  transition: all 1s ease-in;
+  background-color: rgba(255, 255, 255, .064);
+}
+
+pre.inline {
+  padding: .4em 1.6em;
+  box-shadow: none;
+  background-color: transparent;
+  animation: none;
+  transition: none;
+}
+
+pre.inline:hover {
+  transform: none;
+  background-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 1140px;
+  max-height: 640px;
+  box-shadow: 15px 50px 100px -15px rgba(0, 0, 0, .2);
+  animation: fadeInBoxShadow 1s linear;
+  transition: all 1s ease-out;
+}
+
+img:hover {
+  transform: scale(1.02);
+  transition: all 1s ease-in;
+}
+
+picture {
+  display: block;
+}
+
+picture img {
+  max-width: 100%;
+  max-height: 640px;
+}
+
+.blurry--vs {
+  margin-bottom: 3em;
+}
+
+.blurry--vs::after {
+  content: " ";
+  clear: both;
+  display: block;
+  visibility: hidden;
+  height: 0px;
+}
+
+.blurry--vs img {
+  float: left;
+  width: 50%;
+  height: auto;
+}
+
+.hljs {
+  background: transparent !important;
+}
+
+@media (max-width: 980px) {
+  main {
+    margin-top: 2rem;
+  }
+  header h1 {
+    font-size: 2.6em;
+  }
+  footer p, footer ul {
+    float: left;
+    width: 100%;
+    max-width: 100%;
+  }
+  footer ul {
+    margin-bottom: 1em;
+  }
+}

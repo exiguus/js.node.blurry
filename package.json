@@ -1,0 +1,62 @@
+{
+  "name": "blurry",
+  "version": "1.0.0",
+  "description": "Blurry load effect for picture elements. Node module to encode image src to base64 and wrap in svg base64 image",
+  "devDependencies": {
+    "@remy/snap": "^1.1.0",
+    "chai": "^4.1.2",
+    "compression": "^1.7.2",
+    "eslint": "^4.19.1",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "express": "^4.16.3",
+    "express-minify": "^1.0.0",
+    "highlight.js": "^9.12.0",
+    "html-entities": "^1.2.1",
+    "istanbul": "^0.4.5",
+    "jsdoc": "^3.5.5",
+    "lazysizes": "^4.0.4",
+    "mocha": "^5.2.0",
+    "picturefill": "^3.0.2",
+    "pretty": "^2.0.0"
+  },
+  "scripts": {
+    "start": "npm install && node ./example/server.js",
+    "dev": "node ./example/server.js",
+    "dist": "npm run test-cover && npm run doc",
+    "doc": "npm run doc-clean && npm run doc-example && npm run doc-jsdoc && npm run doc-cover",
+    "doc-clean": "rm -rf ./docs/*",
+    "doc-jsdoc": "node_modules/jsdoc/jsdoc.js --readme ./README.md --configure ./jsdoc.json --destination ./docs/jsdoc ./lib/*",
+    "doc-example": "node ./example/server.js & echo $! > .pid; sleep 1 && node_modules/@remy/snap/cli/index.js http://localhost:3333 -o docs; kill $(cat .pid); rm .pid; cp -R ./example/static/img ./docs/static",
+    "doc-cover": "mkdir ./docs/coverage; cp -R ./coverage/lcov-report/* ./docs/coverage/",
+    "test": "npm run lint && npm run dist",
+    "test-unit": "NODE_ENV=test mocha './lib/*.spec.js'",
+    "test-cover": "istanbul cover _mocha $(find ./lib -name \"*.spec.js\" -not -path \"./node_modules/*\")",
+    "lint": "node_modules/eslint/bin/eslint.js index.js && node_modules/eslint/bin/eslint.js ./lib/*.js"
+  },
+  "keywords": [
+    "onload",
+    "effect",
+    "blur",
+    "blurry",
+    "picture",
+    "image",
+    "animation",
+    "base64",
+    "node",
+    "node.js"
+  ],
+  "main": "index.js",
+  "author": "Simon Gattner <npm@0x38.de>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exiguus/blurry.git"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 6.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink" width="{{width}}px" height="{{height}}px" viewBox="1 1 {{width}} {{height}}">
+  <image filter="url(#blurWitchProject)" width="100%" height="100%" xlink:href="{{base64FileUrl}}"/>
+  <filter id="blurWitchProject" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="20" edgeMode="duplicate" />
+      <feComponentTransfer>
+        <feFuncA type="discrete" tableValues="1 1" />
+      </feComponentTransfer>
+  </filter>
+</svg>
