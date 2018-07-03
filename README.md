@@ -24,7 +24,7 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 
 ## Example
 
-![blurry-effect](https://exiguus.github.io/js.node.blurry/static/blurry.gif)
+![blurry-effect](https://exiguus.github.io/js.node.blurry/static/img/blurry.gif)
 
 ```html
 <picture>
