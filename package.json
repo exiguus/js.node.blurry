@@ -1,5 +1,5 @@
 {
-  "name": "blurry",
+  "name": "js.node.blurry",
   "version": "1.0.0",
   "description": "Blurry load effect for picture elements. Node module to encode image src to base64 and wrap in svg base64 image",
   "devDependencies": {
@@ -53,7 +53,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/exiguus/blurry.git"
+    "url": "https://github.com/exiguus/js.node.blurry.git"
   },
   "engines": {
     "node": ">= 6.0.0",

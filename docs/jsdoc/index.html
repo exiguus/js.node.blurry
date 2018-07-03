@@ -43,15 +43,15 @@
 
 
     <section>
-        <article><p><a href="https://travis-ci.org/exiguus/blurry"><img src="https://img.shields.io/travis/exiguus/blurry/master.svg" alt="tests"></a>
-<a href="https://codeclimate.com/github/exiguus/blurry/test_coverage"><img src="https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/test_coverage" alt="coverage"></a>
-<a href="https://codeclimate.com/github/exiguus/blurry/maintainability"><img src="https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/maintainability" alt="maintainability"></a></p>
-<h1>blurry</h1><p>Generate Base64 inline Images. Prepared for lazyloading. Based on configurable SVG Templates. Compatible with Internet Explorer 11 and up.</p>
+        <article><p><a href="https://travis-ci.org/exiguus/js.node.blurry"><img src="https://img.shields.io/travis/exiguus/js.node.blurry/master.svg" alt="tests"></a>
+<a href="https://codeclimate.com/github/exiguus/js.node.blurry/test_coverage"><img src="https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/test_coverage" alt="coverage"></a>
+<a href="https://codeclimate.com/github/exiguus/js.node.blurry/maintainability"><img src="https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/maintainability" alt="maintainability"></a></p>
+<h1>js.node.blurry</h1><p>Generate Base64 inline Images. Prepared for lazyloading. Based on configurable SVG Templates. Compatible with Internet Explorer 11 and up.</p>
 <p>A Solution with a very small footprint to get your DOM interactive blurry and fast.</p>
-<h2>npm</h2><p><a href="https://npmjs.com/package/blurry"><img src="https://img.shields.io/npm/v/blurry.svg" alt="npm"></a></p>
-<pre class="prettyprint source"><code>npm install --save-dev blurry</code></pre><h2>Usage</h2><pre class="prettyprint source lang-javascript"><code>const Blurry = require('blurry');
+<h2>npm</h2><p><a href="https://npmjs.com/package/js.node.blurry"><img src="https://img.shields.io/npm/v/js.node.blurry.svg" alt="npm"></a></p>
+<pre class="prettyprint source"><code>npm install --save-dev js.node.blurry</code></pre><h2>Usage</h2><pre class="prettyprint source lang-javascript"><code>const Blurry = require('blurry');
 const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-preview.jpg'), 'width': 1140, 'height': 640});
-&lt;img alt=&quot;&quot; src=&quot;' + blurry.getUrl() + '&quot;></code></pre><h2>Example</h2><p><img src="https://exiguus.github.io/blurry/static/blurry.gif" alt="blurry-effect"></p>
+&lt;img alt=&quot;&quot; src=&quot;' + blurry.getUrl() + '&quot;></code></pre><h2>Example</h2><p><img src="https://exiguus.github.io/js.node.blurry/static/blurry.gif" alt="blurry-effect"></p>
 <pre class="prettyprint source lang-html"><code>&lt;picture>
   &lt;source data-srcset=&quot;static/img/teapott-ld.webp 1x, static/img/teapott-ld_x2.webp 2x&quot; media=&quot;(min-width: 1200px)&quot; type=&quot;image/webp&quot;>
   &lt;source data-srcset=&quot;static/img/teapott-md.webp 1x, static/img/teapott-md_x2.webp 2x&quot; media=&quot;(min-width: 992px) and (max-width: 1199px)&quot; type=&quot;image/webp&quot;>
@@ -63,11 +63,11 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
   &lt;source data-srcset=&quot;static/img/teapott-m.jpg 1x, static/img/teapott-m_x2.jpg 2x&quot; media=&quot;(max-width: 767px)&quot; type=&quot;image/jpeg&quot;>
   &lt;img class=&quot;lazyload&quot; alt=&quot;webp/jpeg picture element with four breakpoints and base64 blured svg/jpeg preview image&quot; src=&quot;data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSAiaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjExNDBweCIgaGVpZ2h0PSI2NDBweCIgdmlld0JveD0iMSAxIDExNDAgNjQwIj48aW1hZ2UgZmlsdGVyPSJ1cmwoI2JsdXJXaXRjaFByb2plY3QpIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bGluazpocmVmPSJkYXRhOmltYWdlL2pwZWc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBUUFBQVFBQkFBRC80UUFZUlhocFpnQUFTVWtxQUFnQUFBQUFBQUFBQUFBQUFQL3NBQkZFZFdOcmVRQUJBQVFBQUFCa0FBRC80UU5wYUhSMGNEb3ZMMjV6TG1Ga2IySmxMbU52YlM5NFlYQXZNUzR3THdBOFAzaHdZV05yWlhRZ1ltVm5hVzQ5SXUrN3Z5SWdhV1E5SWxjMVRUQk5jRU5sYUdsSWVuSmxVM3BPVkdONmEyTTVaQ0kvUGlBOGVEcDRiWEJ0WlhSaElIaHRiRzV6T25nOUltRmtiMkpsT201ek9tMWxkR0V2SWlCNE9uaHRjSFJyUFNKQlpHOWlaU0JZVFZBZ1EyOXlaU0ExTGpZdFl6RXpPQ0EzT1M0eE5UazRNalFzSURJd01UWXZNRGt2TVRRdE1ERTZNRGs2TURFZ0lDQWdJQ0FnSUNJK0lEeHlaR1k2VWtSR0lIaHRiRzV6T25Ka1pqMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNVGs1T1M4d01pOHlNaTF5WkdZdGMzbHVkR0Y0TFc1ekl5SStJRHh5WkdZNlJHVnpZM0pwY0hScGIyNGdjbVJtT21GaWIzVjBQU0lpSUhodGJHNXpPbmh0Y0UxTlBTSm9kSFJ3T2k4dmJuTXVZV1J2WW1VdVkyOXRMM2hoY0M4eExqQXZiVzB2SWlCNGJXeHVjenB6ZEZKbFpqMGlhSFIwY0RvdkwyNXpMbUZrYjJKbExtTnZiUzk0WVhBdk1TNHdMM05VZVhCbEwxSmxjMjkxY21ObFVtVm1JeUlnZUcxc2JuTTZlRzF3UFNKb2RIUndPaTh2Ym5NdVlXUnZZbVV1WTI5dEwzaGhjQzh4TGpBdklpQjRiWEJOVFRwUGNtbG5hVzVoYkVSdlkzVnRaVzUwU1VROUlqZzBPRUZHT0RFMU5VTTFNVVF6UlRrMU9FSXhNREEzTWtFMFF6ZEdPVVpDSWlCNGJYQk5UVHBFYjJOMWJXVnVkRWxFUFNKNGJYQXVaR2xrT2taQk5UTXdPVGMzTlVORFFqRXhSVGc0T0VWQlJrWTJNREk1TWpRNE16RkZJaUI0YlhCTlRUcEpibk4wWVc1alpVbEVQU0o0YlhBdWFXbGtPa1pCTlRNd09UYzJOVU5EUWpFeFJUZzRPRVZCUmtZMk1ESTVNalE0TXpGRklpQjRiWEE2UTNKbFlYUnZjbFJ2YjJ3OUlrRmtiMkpsSUZCb2IzUnZjMmh2Y0NCRFF5QXlNREUzSUNoTllXTnBiblJ2YzJncElqNGdQSGh0Y0UxTk9rUmxjbWwyWldSR2NtOXRJSE4wVW1WbU9tbHVjM1JoYm1ObFNVUTlJbmh0Y0M1cGFXUTZOVFZpWTJRMVlXTXRZalUwTWkwME9HRmhMVGt6TmprdE56SmhNbVEyTnpZMk4ySmhJaUJ6ZEZKbFpqcGtiMk4xYldWdWRFbEVQU0k0TkRoQlJqZ3hOVFZETlRGRU0wVTVOVGhDTVRBd056SkJORU0zUmpsR1FpSXZQaUE4TDNKa1pqcEVaWE5qY21sd2RHbHZiajRnUEM5eVpHWTZVa1JHUGlBOEwzZzZlRzF3YldWMFlUNGdQRDk0Y0dGamEyVjBJR1Z1WkQwaWNpSS9Qdi90QUVoUWFHOTBiM05vYjNBZ015NHdBRGhDU1UwRUJBQUFBQUFBRHh3QldnQURHeVZISEFJQUFBSUFBZ0E0UWtsTkJDVUFBQUFBQUJEODRSK0p5TGZKZUM4MFlqUUhXSGZyLzlzQWhBQUlCZ1lIQmdVSUJ3Y0hDUWtJQ2d3VURRd0xDd3daRWhNUEZCMGFIeDRkR2h3Y0lDUXVKeUFpTENNY0hDZzNLU3d3TVRRME5COG5PVDA0TWp3dU16UXlBUWtKQ1F3TERCZ05EUmd5SVJ3aE1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakwvd2dBUkNBQkFBSElEQVNJQUFoRUJBeEVCLzhRQUhBQUFBUVFEQVFBQUFBQUFBQUFBQUFBQUFBRUNCQVVEQndnRy85b0FDQUVCQUFBQUFOank1c3lYRTVWZTRGSG02N0NaT3NKSEwxZTVvSmtkdHV4bDJGakw1cXFuQ0N2ejdEdFpzNnloODhLOEJ6OG5yN0NiWTU5VjBHUlJVSDVhVGQvaTZXSkhlT0VSVmZCNmI1blpJY0NBcWlld2s2OXlQVVJRVUUvL3hBQVpBUUVBQXdFQkFBQUFBQUFBQUFBQUFBQUFBUUlGQkFQLzJnQUlBUUlRQUFBQXJGOWlSaXJhOGs0bnIxOUlaZWphUkgvL3hBQVpBUUFDQXdFQUFBQUFBQUFBQUFBQUFBQUFBUUlFQlFQLzJnQUlBUU1RQUFBQWlTeW9ndGhHWEVTMnVkU3VnV3JSNUFJLy84UUFOUkFBQVFNQ0F3UUlBd2tCQUFBQUFBQUFBUUFDQXdRUkJRWWhFakZCVVJBVElDSlNZWEhCQjRHUk1ESkNZb0tTb2JMaDhQL2FBQWdCQVFBQlB3Q09RRm9CMFBBcUtTNTVPQ2lrL3dCQ2lrSXNMK2hUSFhXTjBETVR3YXNvbmk3WjRYeC9VTHEzTWNXUEZuTk5qNmhCcTJWc0JBQUs2dWh6c3JsUVRIWUZ6dE00SGtvcGJBYlIwNE9VVXgyZ0NiTzRIbW9wUWZUaU9TZ2s1b3U3aFdZcWNVbVpzVGc0TXFwTGZXNkc1WDdGMDFXQ3A1ckh1blpQRnAzRlJUWDBhUFZwVVVndHhMZjVhb1pkUnJyd2R6VUV2eTlrK1VOaUt6WE8ycHpaaWtyTnhxWEFJSHNBTGNVSEVia0hHdzdwVkxVQWdDKzBQQ2Q0VU00SUd1MEIrNEtLYmM2LzZoN3FLZTJtbXZEZ1ZUejdpU3N6Wmdqd1RBcW1yY1J0dGJhTnZONTNCT2U2U1J6M203aWJrOHloMDJDc2dBbURvd3F2cGNScDJ0RGd5VUN3TjA2cGtwSkF5ZHAvSysrLzBLZ3hDK3UxOHh2VU5jeTI4ZXlseHFubzRIelRUTll4Z3U1empvQjdyTk9aNXN3MW9EZHBsSERwRXcvMkszb2RGMWNJK1N2eFRYYWkxN0t3OFN3L0dvS1NSc2paSldPSGtzak1qenBnNzNQaWVZR25aTDVHYkljZkpaMHFuNVN6SE5oRlBJYWt4dGE4dThJY0xnRlI1cnJuRDdsajZxc3hDcnhGd05US1hOR3JXRFJvUWFySUJYN0lLMjMvQVBGWmF5bzdNR01SVU1EWHVGd1pYK0ZxQm9NaFpLbXFuTURZYVNIUmcvRzdjMXZ6S3I2MnB4WEVhbXZySDlaVVZFaGxrZDVsTWJaQWFLMzJIcDBmRDNFNm5MMGJaR1FROVU4M2NaRzkrUmZGTE9vekhMU1lYUWg3YVNuSFdWSG5NbXhua2cyM1J4SzRJZGtub3N2L3hBQWRFUUFCQkFNQkFRQUFBQUFBQUFBQUFBQUNBQUVnSVFNUk1SQVMvOW9BQ0FFQ0FRRS9BUEJUYzNNYnBEVGFrT0lpNHNPSDR0NUFER1ZNbWFmL3hBQWRFUUFDQVFVQkFRQUFBQUFBQUFBQUFBQUJBZ0FERVJJZ0lSQXgvOW9BQ0FFREFRRS9BUExSdUhjbTBicDFJak9GK3lyV3k0Tm5iRWRNWnQvLzJRPT0iLz48IS0tIFRoZSBjYWtlIGlzIGEgbGllIC0tPjxmaWx0ZXIgaWQ9ImJsdXJXaXRjaFByb2plY3QiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMCIgZWRnZU1vZGU9ImR1cGxpY2F0ZSIgLz48ZmVDb21wb25lbnRUcmFuc2Zlcj48ZmVGdW5jQSB0eXBlPSJkaXNjcmV0ZSIgdGFibGVWYWx1ZXM9IjEgMSIgLz48L2ZlQ29tcG9uZW50VHJhbnNmZXI+PC9maWx0ZXI+PC9zdmc+&quot;>
 &lt;/picture></code></pre><h2>Documentation</h2><ul>
-<li><p><a href="https://exiguus.github.io/blurry/">Example</a></p>
+<li><p><a href="https://exiguus.github.io/js.node.blurry/">Example</a></p>
 </li>
-<li><p><a href="https://exiguus.github.io/blurry/jsdoc/">jsDoc</a></p>
+<li><p><a href="https://exiguus.github.io/js.node.blurry/jsdoc/">jsDoc</a></p>
 </li>
-<li><p><a href="https://exiguus.github.io/blurry/coverage/">Coverage</a></p>
+<li><p><a href="https://exiguus.github.io/js.node.blurry/coverage/">Coverage</a></p>
 </li>
 </ul>
 <h2>Other</h2><ul>
@@ -301,7 +301,7 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jul 04 2018 00:57:49 GMT+0200 (CEST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jul 04 2018 01:05:20 GMT+0200 (CEST)
 </footer>
 
 <script> prettyPrint(); </script>

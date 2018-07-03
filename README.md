@@ -2,7 +2,7 @@
 [![coverage][coverage]][coverage-url]
 [![maintainability][maintainability]][maintainability-url]
 
-# blurry
+# js.node.blurry
 Generate Base64 inline Images. Prepared for lazyloading. Based on configurable SVG Templates. Compatible with Internet Explorer 11 and up.
 
 A Solution with a very small footprint to get your DOM interactive blurry and fast.
@@ -11,7 +11,7 @@ A Solution with a very small footprint to get your DOM interactive blurry and fa
 [![npm][npm]][npm-url]
 
 ```
-npm install --save-dev blurry
+npm install --save-dev js.node.blurry
 ```
 
 ## Usage
@@ -24,7 +24,7 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 
 ## Example
 
-![blurry-effect](https://exiguus.github.io/blurry/static/blurry.gif)
+![blurry-effect](https://exiguus.github.io/js.node.blurry/static/blurry.gif)
 
 ```html
 <picture>
@@ -42,30 +42,30 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 
 ## Documentation
 
-* [Example](https://exiguus.github.io/blurry/)
+* [Example](https://exiguus.github.io/js.node.blurry/)
 
-* [jsDoc](https://exiguus.github.io/blurry/jsdoc/)
+* [jsDoc](https://exiguus.github.io/js.node.blurry/jsdoc/)
 
-* [Coverage](https://exiguus.github.io/blurry/coverage/)
+* [Coverage](https://exiguus.github.io/js.node.blurry/coverage/)
 
 ## Other
 
 * [task.pre.image.video.env](https://github.com/exiguus/task.pre.image.video.env) Task-Runner Environment to convert and optimise images and videos for picture Elements.
 
 
-[tests]: https://img.shields.io/travis/exiguus/blurry/master.svg
-[tests-url]: https://travis-ci.org/exiguus/blurry
+[tests]: https://img.shields.io/travis/exiguus/js.node.blurry/master.svg
+[tests-url]: https://travis-ci.org/exiguus/js.node.blurry
 
 [coverage]:
 https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/test_coverage
-[coverage-url]: https://codeclimate.com/github/exiguus/blurry/test_coverage
+[coverage-url]: https://codeclimate.com/github/exiguus/js.node.blurry/test_coverage
 
 [maintainability]:
 https://api.codeclimate.com/v1/badges/017792a8149e03c3f71b/maintainability
-[maintainability-url]: https://codeclimate.com/github/exiguus/blurry/maintainability
+[maintainability-url]: https://codeclimate.com/github/exiguus/js.node.blurry/maintainability
 
-[npm]: https://img.shields.io/npm/v/blurry.svg
-[npm-url]: https://npmjs.com/package/blurry
+[npm]: https://img.shields.io/npm/v/js.node.blurry.svg
+[npm-url]: https://npmjs.com/package/js.node.blurry
 
-[licenses-url]: https://img.shields.io/npm/l/blurry.svg
-[licenses]: https://github.com/exiguus/blurry
+[licenses-url]: https://img.shields.io/npm/l/js.node.blurry.svg
+[licenses]: https://github.com/exiguus/js.node.blurry

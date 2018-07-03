@@ -58,7 +58,7 @@ app.get('/', function(req, res) {
           '<pre class="inline">' +
             '<code class="console">' +
               '# install' + "\n" + // eslint-disable-line quotes
-              'npm install --save-dev blurry' +
+              'npm install --save-dev js.node.blurry' +
             '</code>' +
           '</pre>' +
           '<pre class="inline">' +
@@ -149,13 +149,13 @@ app.get('/', function(req, res) {
         '</article>' +
         '<footer>' +
           '<ul>' +
-            '<li><a title="Github" href="https://github.com/exiguus/blurry">git</a></li>' +
-            '<li><a title="NPM JS" href="https://www.npmjs.com/package/blurry">npm</a></li>' +
-            '<li><a title="JSDOC" href="https://exiguus.github.io/blurry/jsdoc/index.html">docs</a></li>' +
-            '<li><a title="Coverage lcov-report" href="https://exiguus.github.io/blurry/coverage/index.html">coverage</a></li>' +
-            '<li><a title="License MIT" href="https://github.com/exiguus/blurry/blob/master/LICENSE">license</a></li>' +
+            '<li><a title="Github" href="https://github.com/exiguus/js.node.blurry">git</a></li>' +
+            '<li><a title="NPM JS" href="https://www.npmjs.com/package/js.node.blurry">npm</a></li>' +
+            '<li><a title="JSDOC" href="https://exiguus.github.io/js.node.blurry/jsdoc/index.html">docs</a></li>' +
+            '<li><a title="Coverage lcov-report" href="https://exiguus.github.io/js.node.blurry/coverage/index.html">coverage</a></li>' +
+            '<li><a title="License MIT" href="https://github.com/exiguus/js.node.blurry/blob/master/LICENSE">license</a></li>' +
           '</ul>' +
-          '<p><a href="https://github.com/exiguus/blurry" title="#blurry &mdash; A node module to generate reliable image load effects.">#blurry</a> ' + (new Date()).getFullYear() + '</p>' +
+          '<p><a href="https://github.com/exiguus/js.node.blurry" title="#blurry &mdash; A node module to generate reliable image load effects.">#blurry</a> ' + (new Date()).getFullYear() + '</p>' +
         '</footer>' +
       '</main>' +
       '<script src="static/js/lazysizes/lazysizes.min.js" async></script>' +
