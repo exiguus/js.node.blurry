@@ -26,6 +26,8 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 
 ![blurry-effect](https://exiguus.github.io/js.node.blurry/static/img/blurry.gif)
 
+Picture Element Example from the [docs page](https://exiguus.github.io/js.node.blurry/).
+
 ```html
 <picture>
   <source data-srcset="static/img/teapott-ld.webp 1x, static/img/teapott-ld_x2.webp 2x" media="(min-width: 1200px)" type="image/webp">
@@ -47,6 +49,26 @@ const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-prev
 * [jsDoc](https://exiguus.github.io/js.node.blurry/jsdoc/)
 
 * [Coverage](https://exiguus.github.io/js.node.blurry/coverage/)
+
+
+## Development
+
+Install and start Dev Server at http://localhost:3333
+```
+npm start
+```
+
+Start Dev Server at http://localhost:3333
+
+The Express Dev Server Sample App, which also generates the [docs page](https://exiguus.github.io/js.node.blurry/), is located at `example/server.js`
+```
+npm run dev
+```
+
+Run tests and generate docs
+```
+npm test
+```
 
 ## Other
 

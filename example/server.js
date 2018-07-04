@@ -116,7 +116,7 @@ app.get('/', function(req, res) {
           '<figure>' +
             '<pre>' +
               '<code class="javascript">' +
-                '// Render Blurry as base64 image src' +
+                '// Render Blurry as base64 image src' + "\n" + // eslint-disable-line quotes
                 entities.encode(pretty("const Blurry = require('blurry')")) + "\n" + // eslint-disable-line quotes
                 entities.encode(pretty("const blurry = new Blurry({'file': path.join(__dirname, 'static/img/teapott-preview.jpg'), 'width': 1140, 'height': 640});")) + "\n" + // eslint-disable-line quotes
                 entities.encode(pretty("<img alt=\"\" src=\"' + blurry.getUrl() + '\">")) + // eslint-disable-line quotes
