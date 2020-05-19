@@ -56,7 +56,7 @@
     "url": "https://github.com/exiguus/js.node.blurry.git"
   },
   "engines": {
-    "node": ">= 6.0.0",
+    "node": ">= 10.0.0",
     "npm": ">= 6.0.1"
   }
 }
